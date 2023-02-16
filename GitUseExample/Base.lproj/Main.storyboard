@@ -17,19 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOh-3z-cfO">
-                                <rect key="frame" x="152.66666666666666" y="409" width="88" height="34.333333333333314"/>
+                                <rect key="frame" x="152.66666666666666" y="379.33333333333331" width="88" height="93.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="example"/>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oiZ-rO-BIN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is a gemy label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gl-NK-LBr">
+                                <rect key="frame" x="73" y="112" width="251" height="20.333333333333343"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kOh-3z-cfO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DQh-vv-oRg"/>
+                            <constraint firstItem="8gl-NK-LBr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="YBM-qA-Vxy"/>
+                            <constraint firstItem="8gl-NK-LBr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="ZxV-RC-0su"/>
                             <constraint firstItem="kOh-3z-cfO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jrL-Au-jTR"/>
+                            <constraint firstItem="kOh-3z-cfO" firstAttribute="top" secondItem="8gl-NK-LBr" secondAttribute="bottom" constant="247" id="lAy-RE-NRS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8gl-NK-LBr" secondAttribute="trailing" constant="69" id="opi-uS-bHg"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -41,6 +52,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
